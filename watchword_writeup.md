@@ -38,7 +38,7 @@ StegHide informs us that if was able to extract the file `base64.txt`. When we o
 
 `W^7?+dsk&3VRB_4W^-?2X=QYIEFgDfAYpQ4AZBT9VQg%9AZBu9Wh@|fWgua4Wgup0ZeeU}c_3kTVQXa}eE`
 
-At first glance it looks like this could be Base64, but it also contains special characters. After some quick googling we stumble across Ascii85 encoding. Which Wikipedia tells us includes the character `0`-`9`, `A`-`Z`, `a`-`z`, and the characters `!@#$%^&*()_+-;<=>?\`{|}~`. This looks pretty promising. A little more research even tells us that we can decode this using Python3.
+At first glance it looks like this could be Base64, but it also contains special characters. After some quick googling we stumble across Ascii85 encoding. Which Wikipedia tells us includes the character `0`-`9`, `A`-`Z`, `a`-`z`, and the characters ``!@#$%^&*()_+-;<=>?`{|}~``. This looks pretty promising. A little more research even tells us that we can decode this using Python3.
 
 ![base85decode](https://github.com/Fauer4Effect/write-ups/blob/master/screencaps/base85_decode.png)
 
