@@ -14,7 +14,7 @@ Next we check to see if there is another file hidden inside of the MP4.
 ![powpow.mp4 binwalk](https://github.com/Fauer4Effect/write-ups/blob/master/screencaps/binwalk_powpow.png)
 
 Ok, so we can see that there is a png file inside of the video. So we extract that file using `foremost powpow.mp4`.
-This is the image that comes out, some nice neosporin flavored Oreos.
+This is the image that comes out, some nice Neosporin flavored Oreos.
 
 ![oreos](https://github.com/Fauer4Effect/write-ups/blob/master/screencaps/oreo.png)
 
@@ -23,7 +23,7 @@ We run Stegsolve on the image and can see that there are signs of data being hid
 ![stegsolve](https://github.com/Fauer4Effect/write-ups/blob/master/screencaps/stegsolve_oreo.PNG)
 
 So we are pretty sure that there's data hidden in the image and that we need to use StegHide at some point. Unfortunately, StegHide does not work with PNG files so we cannot use it yet.
-Instead we turn to the Python Stepic package, for image steganography. Using the script shown below and the command `python unhide.py > data` we are able to pull the data out of the PNG.
+Instead we turn to the Python Stepic package. Using the script shown below and the command `python unhide.py > data` we are able to pull the data out of the PNG.
 
 ![unhide.py](https://github.com/Fauer4Effect/write-ups/blob/master/screencaps/unhide.png)
 
