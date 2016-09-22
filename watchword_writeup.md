@@ -34,7 +34,7 @@ So we have pulled the data out of the Oreo picture. Running `file data` tells us
 Of course it's a Harambe meme, not exactly a rare reference in CSAW this year. By this point a hint had been released for the challenge that said `password = password`.
 With this in mind we run `steghide extract -p password -sf harambe.jpg`.
 
-StegHide informs us that if was able to extract the file `base64.txt`. When we open the file we see this
+StegHide informs us that if was able to extract the file `base64.txt`. When we open the file we see this:
 
 `W^7?+dsk&3VRB_4W^-?2X=QYIEFgDfAYpQ4AZBT9VQg%9AZBu9Wh@|fWgua4Wgup0ZeeU}c_3kTVQXa}eE`
 
