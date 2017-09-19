@@ -1,2 +1,2 @@
 # write-ups
-CTF write-ups by bitsforeveryone
+Assorted Writeups
