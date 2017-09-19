@@ -48,7 +48,9 @@ So our exploit is going to look like the following
 
 We can easily pull the buffer address from the prompt, just make sure to remember to pad it out to full length.
 
-And boom shell.
+And boom shell...
+
+![shell](https://github.com/Fauer4Effect/write-ups/blob/master/pilot/shell.png)
 
 then ls
 and cat flag
