@@ -10,7 +10,11 @@ This is a fairly straightforwards buffer overflow, the only twist is that we nee
 
 From running file on the binary we can see that it's a 64 bit binary. Running the binary gives us a prompt, including a hex value that looks like a memory address, back to this later. Then it prompts us for a command, trying it with just random input and the binary exits.
 
+![pilot prompt](https://github.com/Fauer4Effect/write-ups/blob/master/pilot/prompt.png)
+
 The next thing we do is open it up in Binary Ninja and start looking for anything interesting. Looking at where the user input is received we can see that it will read up to 64 bytes of input but the buffer is only 32 bytes. This looks promising.
+
+![vuln disassembly](https://github.com/Fauer4Effect/write-ups/blob/master/pilot/vuln.png)
 
 ASLR is enabled but luckily the binary is really nice and prints us the address of our buffer.
 
